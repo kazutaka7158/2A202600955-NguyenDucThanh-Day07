@@ -8,11 +8,13 @@ from .chunking import (
 )
 from .embeddings import (
     EMBEDDING_PROVIDER_ENV,
-    LOCAL_EMBEDDING_MODEL,
-    OPENAI_EMBEDDING_MODEL,
-    LocalEmbedder,
+    # LOCAL_EMBEDDING_MODEL,
+    # OPENAI_EMBEDDING_MODEL,
+    GEMINI_EMBEDDING_MODEL,
+    # LocalEmbedder,
     MockEmbedder,
-    OpenAIEmbedder,
+    # OpenAIEmbedder,
+    GeminiEmbedder,
     _mock_embed,
 )
 from .models import Document
@@ -28,10 +30,12 @@ __all__ = [
     "EmbeddingStore",
     "KnowledgeBaseAgent",
     "MockEmbedder",
-    "LocalEmbedder",
-    "OpenAIEmbedder",
+    # "LocalEmbedder",
+    # "OpenAIEmbedder",
+    "GeminiEmbedder",
     "_mock_embed",
-    "LOCAL_EMBEDDING_MODEL",
-    "OPENAI_EMBEDDING_MODEL",
+    # "LOCAL_EMBEDDING_MODEL",
+    # "OPENAI_EMBEDDING_MODEL",
+    "GEMINI_EMBEDDING_MODEL",
     "EMBEDDING_PROVIDER_ENV",
 ]
